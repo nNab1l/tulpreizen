@@ -1,0 +1,45 @@
+@use 'components';
+
+.footer{
+    @extend %section;
+    max-height: 30rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer__header{
+    @extend %header;
+    padding-bottom: 2rem;
+}
+
+
+.footer__h2{
+    @extend %h2handwriting;
+}
+
+
+.footer__fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    padding: 10rem;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.footer__foto{
+    width: 10rem;
+    height: 10rem;
+    list-style: none;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+.footer__img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
